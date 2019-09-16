@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="shop.js"></script>
+    <script src="add_products.js"></script>
+    <link rel='stylesheet' href='./style.css'>
+    
+    <title>ORDER ENTRY</title>
+</head>
+<body>
+    <div class="container">
+       
+          <B><h1>Order Request for POTS and Broadband </h1></B>
+ 
+      </div>
+      <div class="container">
+        <div class="ap">
+          <B><h1>Customer Information</h1></B>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            First Name
+          </div>
+          <div class="col">
+            <input type='text' id="first_name"  placeholder="name" required>
+          </div>
+          <div class="col">
+            Last Name
+          </div>
+          <div class="col">
+            <input type='text' id="last_name"  placeholder="name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" id="apple">
+            Door NO.
+          </div>
+          <div class="col" id="apple">
+            <input type='text' id="door_no"  required>
+          </div>
+          <div class="col" id="apple">
+            Street Address
+          </div>
+          <div class="col" id="apple">
+            <input type='text' id=" street_address"  placeholder="Address" required>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col" id="apple">
+              CITY
+            </div>
+            <div class="col" id="apple">
+              <input type='text' id="city"  placeholder="city" required>
+            </div>
+            <div class="col" id="apple">
+             State
+            </div>
+            <div class="col" id="apple">
+              <input type='text' id="state"  placeholder="state" required>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col" id="apple">
+            ZIP CODE
+          </div>
+          <div class="col" id="apple">
+            <input type='text' id="zipcode" placeholder="zipcode" required>
+          </div>
+          <div class="col" id="apple">
+           EMAIL
+          </div>
+          <div class="col" id="apple">
+            <input type='email'  id="email"  placeholder="email" required>
+          </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="bc">
+          <B><h1>Product Details</h1></B>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col" id="z">
+           Select your plan type below:
+          </div>
+          <div class="col" id="z"> 
+            <input type='radio' name='fruits' value='orange'>Residential
+            <input type='radio' name='fruits' value='mango'>Business
+          </div>
+          <div class="col" id="z">
+            Select your plan
+          </div>
+          <div class="col" id="z">
+            <input type='text' id="plan_type" name='username' placeholder="name" required>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col" id="z">
+             Do you want us to install?
+            </div>
+            <div class="col" style="margin-right:210px" id="z"> 
+              <input type='radio' name='fruits' value='orange'>Yes,I need professional installation
+            </div>
+            
+            <div class="col" id="z"> 
+            </div>
+            </div>
+            <div style="margin-left:300px">
+              <input type='radio' name='fruits' value='mango'>No,I will install myself
+            </div>
+      <div class="m">
+        <button type="button" id="btnProductAdd" class="btn btn-primary btn-lg">Submit Order</button>
+<button type="button" class="btn btn-secondary btn-lg">Submit Request</button>
+      </div>
+
+    
+</body>
+</html>
