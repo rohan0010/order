@@ -53,8 +53,14 @@ const Order = db.define('orders', {
         allowNull: false
     },
     doorno: Sequelize.STRING,
-    address: Sequelize.STRING,
-    city: Sequelize.STRING,
+    address: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    city: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
     state: Sequelize.STRING,
      zipcode: {
         type: Sequelize.INTEGER,
